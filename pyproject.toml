@@ -1,0 +1,18 @@
+[project]
+name = "ssdlc-triage"
+version = "1.0.0"
+description = "Tier CVEs by exploitation (CISA KEV), likelihood (FIRST EPSS) and exposure"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+ssdlc-triage = "triage:main"
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["triage"]
